@@ -1,0 +1,49 @@
+@font-face {
+    font-family: dowhile;
+    src: url(../fonts/dowhile/dowhile.ttf);
+}
+
+nav{
+	background-color: rgba(39,208,185,0.0);
+}
+
+.logo{
+	font-size: 40px;
+	color: #fff;
+	font-family: 'dowhile';
+	position: fixed;
+	top: -10px;
+	left: 60px;
+}
+
+.slider,.slides {
+	margin-top: -70px;
+	min-height: 680px;
+}
+.slider .slides li{
+	min-height: 680px;
+}
+
+#portafolio{
+	background-color: #fff;
+
+}
+
+#blog{
+	background-color: #ffffff;
+	padding: 50px;
+}
+
+.colorRed{
+	background: #EB524A;
+}
+.colorGreen{
+	background: #27D0B9;
+}
+.colorOrange{
+	background: #f27935;
+}
+
+.container{
+	width: 90%;
+}
