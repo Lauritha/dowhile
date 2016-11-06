@@ -2,11 +2,9 @@
     font-family: dowhile;
     src: url(../fonts/dowhile/dowhile.ttf);
 }
-
-nav{
-	background-color: rgba(39,208,185,0.0);
+a{
+	color: #4B4B4B;
 }
-
 .logo{
 	font-size: 40px;
 	color: #fff;
@@ -15,35 +13,102 @@ nav{
 	top: -10px;
 	left: 60px;
 }
-
-.slider,.slides {
-	margin-top: -70px;
-	min-height: 680px;
+.logo_2{
+	font-size: 8em;
+	color: #fff;
+	font-family: 'dowhile';
 }
-.slider .slides li{
-	min-height: 680px;
+.light-text{
+	color: #fff;
+	font-size: 2.7em;
+	font-weight: normal;
+	padding-bottom: 2em;
 }
-
+#home{
+	background-image: url(../img/fondogris_2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 10em;
+}
 #portafolio{
-	background-color: #fff;
-
+	background-color: #f1f1f1;
 }
 
-#blog{
-	background-color: #ffffff;
+#conocenos{
+	background-color: #C7F5F6;
 	padding: 50px;
 }
-
-.colorRed{
-	background: #EB524A;
+#blog{
+	background-color: #FF8987;
+	padding: 50px;
 }
-.colorGreen{
-	background: #27D0B9;
+.services-img{
+	width: 20%;
 }
-.colorOrange{
-	background: #f27935;
-}
-
 .container{
 	width: 90%;
+}
+.card {
+    max-width: 80% !important;
+}
+.card .card-content {
+    padding: 0px 0.7em !important;
+}
+.text-card{
+	padding-top: 2em;
+}
+.title-section{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	padding: 1em 0;
+}
+.title-section_2{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	padding: 0 0 0 1em;
+}
+nav .nav-wrapper {
+	background-color: #4B4B4B;
+}
+.pd-bottom{
+	padding-bottom: 2em;
+}
+.pd-top{
+	padding-top: 2em;
+}
+.subtitle-section{
+	margin-top: -35px !important;
+}
+@media (max-width: 480px) {
+	.logo_2{
+		font-size: 4em;
+		color: #fff;
+		font-family: 'dowhile';
+	}
+	.light-text{
+		color: #fff;
+		font-size: 0.8em;
+		font-weight: normal;
+	}
+	#home{
+		background-image: url(../img/fondogris.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 2.8em;
+	}
+	.paragraph-services{
+		padding: 0 !important;
+	}
+	.card.small, .card.medium, .card.large {
+	    position: relative;
+	    left: 33px;
+	}
+}
+
+.title-services{
+	font-weight: bold;
+	font-family: 'Lato';
+}
+.paragraph-services{
+	padding: 0 4em;
 }

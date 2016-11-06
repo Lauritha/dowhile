@@ -6,6 +6,7 @@
     <title>DoWhile</title>
   	<link rel="stylesheet" href="css/materialize.css">
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   	<link type="text/css" rel="stylesheet" href="css/main.css"/>
@@ -16,89 +17,68 @@
           <h3 class="logo">dowhile</h3>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="empresa.html">CONÓCENOS</a></li>
-            <li><a href="productos.html">PORTAFOLIO</a></li>
-            <li><a href="proveedores.html">BLOG</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="#home">INICIO</a></li>
+            <li><a href="#portafolio">PORTAFOLIO</a></li>
+            <li><a href="#blog">SERVICIOS</a></li>
+            <li><a href="#conocenos">CONÓCENOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="empresa.html">CONÓCENOS</a></li>
-            <li><a href="productos.html">PORTAFOLIO</a></li>
-            <li><a href="proveedores.html">BLOG</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="#home">INICIO</a></li>
+            <li><a href="#portafolio">PORTAFOLIO</a></li>
+            <li><a href="#blog">SERVICIOS</a></li>
+            <li><a href="#conocenos">CONÓCENOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
           </ul>
         </div>
       </nav>
     </div>
     <section id=home>
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="img/slideVerder.png" class="imgSlides"> <!-- random image -->
-            <div class="caption center-align">
-              <h3>This is our big Tagline!</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/red.png" class="imgSlides"> <!-- random image -->
-            <div class="caption left-align">
-              <h3>Left Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/orange.png" class="imgSlides"> <!-- random image -->
-            <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-          </li>
-        </ul>
+      <div class="center-align">
+        <h3 class="logo_2">dowhile</h3>
+        <h5 class="light-text">Web Development</h5>
       </div>
     </section>
-    
-    <div class="container">
+    <div class="container-fluid">
       <section id="portafolio" ng-controller="portafolio">
-        <div class="">
+        <div class="container pd-bottom">
           <div class="row center">
-          <div class="col s12 m12 l12">
-            <h4>CONOCE NUESTROS PROYECTOS</h4>
+            <div class="col s12 m12 l12">
+              <h4 class="title-section">CONOCE NUESTROS PROYECTOS</h4>
+              <h6 class="subtitle-section">DESARROLLOS ACORDE A LAS EXIGENCIAS DE MERCADO</h6>
+            </div>
           </div>
-        </div>
-        <div class="row" >
-          <div class="col s12 m4 l4" ng-repeat="sitio in websites">
-            <div class="repeat" >
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" ng-src="http://localhost:4000/{{sitio.urlImage}}">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">{{sitio.nombre}}<i class="material-icons right">more_vert</i></span>
-                  <p><a ng-href="{{sitio.url}}">Enlace</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">{{sitio.nombre}}<i class="material-icons right">close</i></span>
-                  <p>{{sitio.description}}</p>
+          <div class="row pd-bottom pd-top" >
+            <div class="col s12 m4 l" ng-repeat="sitio in websites">
+              <div class="repeat" >
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" ng-src="http://localhost:4000/{{sitio.urlImage}}">
+                  </div>
+                  <div class="card-content">
+                    <h6 class="card-title activator grey-text text-darken-4">{{sitio.nombre}}<i class="material-icons pull-right">add_circle_outline</i></h6>
+                    <p><a ng-href="{{sitio.url}}" class="pull-right">Enlace</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{sitio.nombre}}<i class="material-icons right">close</i></span>
+                    <p class="text-card">{{sitio.description}}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div class="col s12 m4 l4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/este.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Proximo Proyecto<i class="material-icons right"></i></span>
-                <p><a href="#"></a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Contactenos!!!!.</p>
+            <div class="col s12 m4 l4">
+              <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/este.png">
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title activator grey-text text-darken-4">Prontamente...<i class="material-icons pull-right">add_circle_outline</i></h6>
+                  <p><a href="#" class="pull-right">www.tudominio.cl</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                  <p class="text-card">Para mayor información presiona<a href="#contacto"> aquí!</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -107,92 +87,71 @@
       <section id="blog">
         <div class="row center">
           <div class="col s12 m12 l12">
-            <h4>TENDENCIAS QUE NOS MUEVEN</h4>
+            <h4 class="title-section">NUESTROS SERVICIOS</h4>
+            <h6 class="subtitle-section">TENEMOS UN MUNDO DE IDEAS PARA OFRECERTE</h6>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="card colorGreen">
-              <div class="card-content white-text">
-                <span class="card-title">Responsive Design</span>
-                <img src="img/responsive.png" alt="" class="responsive-img">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
-              </div>
-            </div>
+        <div class="row center pd-top">        
+          <div class="col s12 m4 l4">
+            <img src="img/invention.png" alt="" class="responsive-img services-img">
+            <h6 class="title-services">Fábrica de Ideas</h6>
+            <p class="paragraph-services">Juntos crearemos una gran propuesta, que se adapte a tu negocio y tus necesidades.</p>
           </div>
-          <div class="col s12 m4">
-            <div class="card colorRed ">
-              <div class="card-content white-text">
-                <span class="card-title">Aplicaciones Móviles</span>
-                <img src="img/aplicaciones.png" alt="" class="responsive-img">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
-              </div>
-            </div>
+          <div class="col s12 m4 l4">
+            <img src="img/hand-gesture.png" alt="" class="responsive-img services-img">
+            <h6 class="title-services">Responsive Design</h6>
+            <p class="paragraph-services">Diseños interactivos, atractivos y amigables adaptables a todo tipo de dispositivo.</p>
           </div>
-          <div class="col s12 m4">
-            <div class="card colorOrange ">
-              <div class="card-content white-text">
-                <span class="card-title">Diseño UI/UX</span>
-                <img src="img/ux.png" alt="" class="responsive-img">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
-              </div>
-            </div>
+          <div class="col s12 m4 l4">
+            <img src="img/touch-screen.png" alt="" class="responsive-img services-img">
+            <h6 class="title-services">Aplicaciones</h6>
+            <p class="paragraph-services">Desarrollo de aplicaciones nativas e hibridas, nos ajustamos a los requerimientos de tu idea de negocio.</p>
           </div>
         </div>
-        <div class="row center">
-          <div class="col s12 m12 l12">
-            <h4>CREEMOS EN LAS IDEAS</h4>
+        <div class="row center pd-top">        
+          <div class="col s12 m4 l4">
+            <img src="img/repairing.png" alt="" class="responsive-img services-img">
+            <h6 class="title-services">Asistencia Técnica</h6>
+            <p class="paragraph-services">Cambios y reestructura de sitios o aplicaciones ya implementados, asistencia técnica a todos nuestros desarrollos.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m6">
-            <img src="img/chilito-41.png" alt="" class="responsive-img">
+          <div class="col s12 m4 l4">
+            <img src="img/line-graphic.png" alt="" class="responsive-img services-img">
+            <h6 class="title-services">SEO</h6>
+            <p class="paragraph-services">Posicionamiento web, incremento en tus graficos de venta, visitas y aumento de tu base de datos.</p>
           </div>
-          <div class="col s12 m6">
-            <img src="img/chilito-41.png" alt="" class="responsive-img">
+          <div class="col s12 m4 l4">
+            <img src="img/user.png" alt="" class="responsive-img services-img">
+            <h6 class="title-services">Trabajo Personalizado</h6>
+            <p class="paragraph-services">Entendemos la importancia de la marca personal y la plusvalía que este punto añade a tu negocio, por lo tanto hacemos de tu diseño un trabajo único y personalizado.</p>
           </div>
         </div>
       </section>
       <section id="conocenos">
         <div class="row center">
           <div class="col s12 m12 l12">
-            <h4>¿QUIÉNES SOMOS?</h4>
+            <h4 class="title-section">NUESTRO EQUIPO</h4>
+            <h6 class="subtitle-section">PROFESIONALES AUTODIDACTAS EN CONSTANTE APRENDIZAJE</h6>
           </div>
         </div>
-        <div class="row center">
+        <div class="row center pd-top">
           <div class="col s12 m6">
-            <img src="img/men.png" alt="">
-            <h6>Luis Vilches</h6>
+            <img src="img/boy.png" alt="" class="responsive-img">
+            <h5 class="title-services">Luis Vilches</h5>
             <h6><a href="#">www.luisvilches.cl</a></h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa saepe sapiente corporis voluptate modi natus magni dignissimos possimus, expedita deserunt totam quas nostrum doloribus fugiat. Quasi labore dignissimos vel saepe.</p>
+            <p class="paragraph-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa saepe sapiente corporis voluptate modi natus magni dignissimos possimus, expedita deserunt totam quas nostrum doloribus fugiat. Quasi labore dignissimos vel saepe.</p>
           </div>
           <div class="col s12 m6">
-            <img src="img/women.png" alt="">
-            <h6>Laura Lizama</h6>
+            <img src="img/girl.png" alt="" class="responsive-img">
+            <h5 class="title-services">Laura Lizama</h5>
             <h6><a href="#">www.lauralizama.cl</a></h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt est, provident cumque reprehenderit impedit repellat consequatur delectus error voluptatibus quia, perferendis quod veritatis neque.</p>
+            <p class="paragraph-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt est, provident cumque reprehenderit impedit repellat consequatur delectus error voluptatibus quia, perferendis quod veritatis neque.</p>
           </div>
         </div>
       </section>
       <section id="contacto">
         <div class="row center">
           <div class="col s12 m12 l12">
-            <h4>QUEREMOS AYUDARTE</h4>
+            <h4 class="title-section">QUEREMOS AYUDARTE</h4>
             <h6>TE INVITAMOS UN CAFÉ</h6>
           </div>
         </div>
