@@ -91,7 +91,13 @@ nav .nav-wrapper {
 		font-weight: normal;
 	}
 	#home{
-		background-image: url(../img/fondogris.jpg);
+		background-image: url(../img/fondogris_2.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 2.8em;
+	}
+	#contacto{
+		background-image: url(../img/fondogris_2.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		padding: 2.8em;
@@ -111,4 +117,35 @@ nav .nav-wrapper {
 }
 .paragraph-services{
 	padding: 0 4em;
+}
+footer.page-footer{
+	background-color: #4B4B4B;
+	color: #FFF;
+	margin-top: 0 !important;
+}
+.link{
+	color: #FFF;
+	font-size: 0.9em;
+}
+.link:hover{
+	color: #1ECBFD;
+	font-size: 1em;
+}
+.list-footer{
+	padding-left: 2em;
+}
+.list-footer i{
+	font-size: 0.8em;
+}
+.link-site{
+	font-family: 'dowhile';
+	color: #FFF;
+	font-size: 1em;
+}
+#contacto{
+	background-image: url(../img/fondogris_2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFF;
+	padding: 3em 0;
 }
