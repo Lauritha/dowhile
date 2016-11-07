@@ -35,11 +35,11 @@ a{
 }
 
 #conocenos{
-	background-color: #C7F5F6;
+	background-color: #27D0B9;
 	padding: 50px;
 }
 #blog{
-	background-color: #FF8987;
+	background-color: #bdc3c7;
 	padding: 50px;
 }
 .services-img{
@@ -148,4 +148,9 @@ footer.page-footer{
 	background-attachment: fixed;
 	color: #FFF;
 	padding: 3em 0;
+}
+
+.error{
+	background: #ff5555;
+	color: #fff;
 }
