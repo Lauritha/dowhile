@@ -2,6 +2,10 @@
     font-family: dowhile;
     src: url(../fonts/dowhile/dowhile.ttf);
 }
+
+body{
+	background: #000;
+}
 a{
 	color: #4B4B4B;
 }
@@ -17,30 +21,35 @@ a{
 	font-size: 8em;
 	color: #fff;
 	font-family: 'dowhile';
+	text-shadow: -2px -2px 10px #555, 2px 2px 10px #555, -2px 2px 10px #555, 2px -2px 10px #555;
 }
 .light-text{
 	color: #fff;
 	font-size: 2.7em;
 	font-weight: normal;
 	padding-bottom: 2em;
+	text-shadow: -2px -2px 10px #555, 2px 2px 10px #555, -2px 2px 10px #555, 2px -2px 10px #555;
 }
 #home{
-	background-image: url(../img/fondogris_2.jpg);
+	background-image: url(../img/noche.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 10em;
+	height: 100vh;
 }
 #portafolio{
 	background-color: #f1f1f1;
 }
 
 #conocenos{
-	background-color: #27D0B9;
+	background-color: #f8f8f8;
 	padding: 50px;
 }
 #blog{
-	background-color: #bdc3c7;
-	padding: 50px;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 10em;
 }
 .services-img{
 	width: 20%;
@@ -61,14 +70,21 @@ a{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	padding: 1em 0;
+	text-shadow: -2px -2px 10px #fff, 2px 2px 10px #fff, -2px 2px 10px #fff, 2px -2px 10px #fff;
+}
+.title-section3{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	padding: 1em 0;
 }
 .title-section_2{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	padding: 0 0 0 1em;
+
 }
-nav .nav-wrapper {
-	background-color: #4B4B4B;
+nav {
+	background-color: rgba(20,20,20,0.8);
 }
 .pd-bottom{
 	padding-bottom: 2em;
@@ -77,6 +93,10 @@ nav .nav-wrapper {
 	padding-top: 2em;
 }
 .subtitle-section{
+	margin-top: -35px !important;
+	text-shadow: -2px -2px 10px #fff, 2px 2px 10px #fff, -2px 2px 10px #fff, 2px -2px 10px #fff;
+}
+.subtitle-section2{
 	margin-top: -35px !important;
 }
 @media (max-width: 480px) {
@@ -91,13 +111,13 @@ nav .nav-wrapper {
 		font-weight: normal;
 	}
 	#home{
-		background-image: url(../img/fondogris_2.jpg);
+		background-image: url(../img/noche.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		padding: 2.8em;
 	}
 	#contacto{
-		background-image: url(../img/fondogris_2.jpg);
+		background-image: url(../img/ciudad.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		padding: 2.8em;
@@ -119,7 +139,7 @@ nav .nav-wrapper {
 	padding: 0 4em;
 }
 footer.page-footer{
-	background-color: #4B4B4B;
+	background-color: #164450;
 	color: #FFF;
 	margin-top: 0 !important;
 }
@@ -143,14 +163,32 @@ footer.page-footer{
 	font-size: 1em;
 }
 #contacto{
-	background-image: url(../img/fondogris_2.jpg);
+	background-image: url(../img/ciudad.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #FFF;
 	padding: 3em 0;
 }
 
+#contacto label{
+	color: #FFF;
+}
+
 .error{
 	background: #ff5555;
 	color: #fff;
+}
+
+.bg{
+	background: rgba(255,255,255,0.8);
+	border-radius: 5px;
+	height: 320px;
+	padding-top: 20px;
+}
+.bg2{
+	background: rgba(20,20,20,0.6);
+	border-radius: 5px;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
 }
